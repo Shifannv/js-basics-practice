@@ -8,6 +8,7 @@ for( let i = 0; i<numbers.length ; i++){
 if( numbers[i] % 2 == 0 ){  // % is which is reminder in division it wil the answer
 // so the  numbers[i] % 2 == 0 to check the even numbers in the [3,2,4,5,6,7,8,9] it will compare every number 
 console.log(numbers[i]+" " +"even number")
+console.log("new line")
 }
 else //the else and if are both answer will get it last ly what was pending data it will get on the output they are same but the else was symbol to write
  if( numbers[i] % 2 !== 0) 
