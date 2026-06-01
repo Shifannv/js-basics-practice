@@ -1,11 +1,11 @@
 let p =  new Promise((resolve, reject) => {
     let a = 1
     let b = 1
-    if (a+b==3) {
-       resolve(success)
+    if (a+b==2) {
+       resolve("success")
     }
     else{
-        reject(failed)
+        reject("failed")
     }    
     })
 p.then((message)=>{
