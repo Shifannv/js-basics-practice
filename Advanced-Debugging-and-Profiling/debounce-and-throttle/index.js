@@ -13,8 +13,7 @@ const updateDebounceText = debounce(()=>{   // debounce creating  to add the tex
 const updateThrottleText = throttle(()=>{   // debounce creating  to add the text in the debounce 
     // throttleText.textContent = text  
         incrementCount(throttleText)
-
-})
+},1000)
 // input.addEventListener("input", e => {   // assigning the text values on the bar
 //     defaultText.textContent = e.target.value
 //     updateDebounceText(e.target.value)  //calling  debounce to show on the same  input  text into the debounce
@@ -57,7 +56,7 @@ shouldWait = true
   document.addEventListener("mouseover", e => {
     incrementCount(defaultText)
     updateDebounceText()
-    updateThrottleText()
+          incrementCount(throttleText)
   })
 
   function incrementCount(element){
